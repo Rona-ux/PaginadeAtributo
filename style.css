@@ -1,0 +1,173 @@
+/*
+    Main Colors used 
+    Dark blue: #2157df 
+    Lighter blue: #0091ff
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+/* HEADER SECTION */
+#title {
+    font-family: 'Tangerine', cursive;
+    font-weight: 700;
+    font-size: 5em;
+    margin: 40px;
+    color: #2157df;
+    letter-spacing: 3px;
+}
+
+
+.animate__animated, .animate__fadeIn {
+    animation-delay: .6s;
+}
+
+#img-div #img-caption q {
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 200;
+    letter-spacing: 3px;
+    color: #0091ff; 
+}
+
+
+#img-div img {
+    max-width: 100%;
+    width: 40%;
+    display: block;
+    height: auto;
+    margin: 45px auto 20px; 
+    border-radius: 50%;
+    border: 2px solid #2157df;
+}
+
+
+/* TRIBUTE INFO */
+#main #tribute-info {
+    background: #fafafa;
+}
+
+#main #tribute-info h2, article {
+    margin-bottom: 5px;
+    padding-top: 15px;
+    letter-spacing: 2px;
+}
+
+
+#main #tribute-info ul li {
+    padding: 15px;
+    margin-left: 10px;
+    list-style-type: none;
+}
+
+
+.bold-blue-text {
+    font-weight: 700;
+    color: #2157df;
+}
+
+
+/* IMAGE GALLERY */
+.container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+}
+
+.img-gallery {
+    height: 250px;
+    width: 40%;
+    border: 1px solid #0091ff;
+}
+
+
+/* ELLA ARTICLE */
+article p {
+    margin: 20px 0;
+}
+
+
+article #tribute-link {
+    padding: 10px;
+    background-color: #2157df;
+    border: none;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    font-size: .8em;
+}
+
+
+
+/* FOOTER */
+footer {
+    margin-top: 10px;
+    padding: 20px;
+    letter-spacing: 2px;
+    font-size: .8em;
+}
+
+
+/* Tablet size */
+@media only screen and (max-width: 768px) {
+    .img-gallery {
+        height: 150px;
+        
+    }
+
+    article p {
+        font-size: .8em;
+    }
+   
+}
+
+
+/* Phone size */
+@media only screen and (max-width: 600px) {
+    #title {
+        font-size: 3.5em;
+    }
+
+    #img-div #img-caption q  {
+        font-size: .8em;
+    }
+
+    #img-div img {
+        margin: 35px auto 20px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    #main #tribute-info ul li {
+        font-size: .8em;
+    }
+
+    .img-gallery {
+        height: 150px;
+        width: 50%;
+    }
+
+    article p, article #tribute-link, footer {
+        font-size: .7em;
+
+    }
+
+    article p {
+        margin: 10px 0;
+    }
+
+}
